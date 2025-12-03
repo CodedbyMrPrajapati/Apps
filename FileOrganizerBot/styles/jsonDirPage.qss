@@ -1,0 +1,150 @@
+/* -----------------------------------------------------------
+   GLOBAL BASE STYLING
+----------------------------------------------------------- */
+
+* {
+    font-family: "Inter", "Segoe UI", sans-serif;
+    color: #EDE9FF;
+}
+
+/* A subtle glow for all focusable elements */
+*:focus {
+    outline: none;
+}
+
+
+/* -----------------------------------------------------------
+   TITLES & LABELS
+----------------------------------------------------------- */
+
+/* Main page title */
+#jsonTitle {
+    font-size: 28px;
+    font-weight: 600;
+    color: #F3E8FF;
+    margin-bottom: 6px;
+}
+
+/* Subtitle under the title */
+#jsonSubtitle {
+    font-size: 16px;
+    color: #C7B4F3;
+    margin-bottom: 28px;
+}
+
+/* Section labels */
+#sectionLabel {
+    font-size: 18px;
+    font-weight: 500;
+    color: #E7D2FF;
+    margin-top: 18px;
+    margin-bottom: 6px;
+}
+
+
+/* -----------------------------------------------------------
+   LINE EDITS (INPUT FIELDS)
+----------------------------------------------------------- */
+
+#pathInput {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 15px;
+
+    /* Soft drop shadow */
+    box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.06);
+}
+
+#pathInput:hover {
+    border: 1.5px solid rgba(214, 165, 255, 0.35);
+}
+
+#pathInput:focus {
+    border: 1.8px solid #C678F3;
+    box-shadow: 0 0 10px rgba(198, 120, 243, 0.5);
+}
+
+
+/* -----------------------------------------------------------
+   BROWSE BUTTONS
+----------------------------------------------------------- */
+
+#browseButton {
+    background: rgba(170, 80, 220, 0.35);
+    border: 1px solid rgba(200, 150, 255, 0.45);
+    border-radius: 10px;
+    padding: 8px 18px;
+    font-size: 14px;
+
+    transition: background 150ms ease-in-out;
+}
+
+#browseButton:hover {
+    background: rgba(200, 120, 255, 0.55);
+    border: 1px solid rgba(220, 180, 255, 0.6);
+}
+
+#browseButton:pressed {
+    background: rgba(150, 50, 200, 0.55);
+}
+
+
+/* -----------------------------------------------------------
+   PRIMARY (PURPLE) ACTION BUTTON
+----------------------------------------------------------- */
+
+#primaryButton {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #B749FF,
+        stop:0.5 #C05CFF,
+        stop:1 #D946EF
+    );
+    border-radius: 12px;
+    padding: 12px 36px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    border: 1.4px solid rgba(255, 255, 255, 0.18);
+
+    /* Soft glow */
+    box-shadow: 0 0 15px rgba(180, 70, 255, 0.4);
+
+    transition: all 120ms ease-in-out;
+}
+
+#primaryButton:hover {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #C45BFF,
+        stop:0.5 #D16CFF,
+        stop:1 #E458F5
+    );
+    box-shadow: 0 0 20px rgba(200, 120, 255, 0.6);
+}
+
+#primaryButton:pressed {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #A438E0,
+        stop:1 #BC2DCE
+    );
+    box-shadow: 0 0 12px rgba(150, 40, 200, 0.4);
+}
+
+
+/* -----------------------------------------------------------
+   OPTIONAL PANEL BACKGROUND (if you want the right panel pretty)
+----------------------------------------------------------- */
+
+#rightPanel {
+    background: rgba(36, 16, 52, 0.45);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    /* Glass blur simulation */
+    backdrop-filter: blur(12px);
+}
++

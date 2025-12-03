@@ -1,0 +1,36 @@
+QWidget#sidebar {
+    background: #1a1c26;
+    border-radius: 12px;
+
+    /* Subtle neon edge */
+    border: 1px solid rgba(0, 170, 255, 0.35);
+}
+QPushButton {
+    background: transparent;
+    padding: 8px;
+    margin: 4px;
+    border-radius: 8px;
+    color: #d7efff; /* Slight blue tint */
+}
+
+/* Neon Blue Hover Glow */
+QPushButton:hover {
+    background: rgba(0, 170, 255, 0.20);
+    border: 1px solid rgba(0, 170, 255, 0.45);
+}
+
+/* Purple pressed effect */
+QPushButton:pressed {
+    background: rgba(140, 50, 255, 0.30);
+    border: 1px solid rgba(140, 50, 255, 0.50);
+}
+QPushButton[selected="true"] {
+    background: rgba(0, 170, 255, 0.35);
+    border: 1px solid rgba(0, 170, 255, 0.60);
+}
+QPushButton:hover {
+    background: rgba(0, 170, 255, 0.25);
+    border: 1px solid rgba(0, 200, 255, 0.65);
+}
+
+

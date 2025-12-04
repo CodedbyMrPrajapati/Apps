@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "qgraphicsopacityeffect": "cpp",
+        "stdexcept": "cpp"
+    },
+    "cmake.showOptionsPage": true,
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.generator": "Unix Makefiles"
+}
